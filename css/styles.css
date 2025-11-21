@@ -798,7 +798,6 @@ text-transform: capitalize;
 .portfolio-team:hover .overley {
     transform: translateY(0);
 }
-
 .portfolio-team:hover,
 .portfolio-team:focus {
     box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
@@ -819,8 +818,8 @@ row-gap: 48px;
 
 @media only screen and (min-width: 1158px) {
    .page-footer {
-    padding: 100px 0;
-    
+    /*padding: 100px 0;*/
+    flex-direction: row;
   }
 }
 .footer-container {
@@ -828,14 +827,14 @@ row-gap: 48px;
     flex-direction: column;
     align-items: center;
    row-gap: 72px;
-margin: 0 auto;
+   margin: 0 auto;
    
 }
 @media only screen and (min-width:768px){
     .footer-container {
     flex-wrap: wrap;
     flex-direction: row;
-    padding:0 108px;
+    /*padding:0 108px;*/
     column-gap:24px;
 
 }
@@ -843,9 +842,10 @@ margin: 0 auto;
 @media screen and (min-width: 1158px)  {
     .footer-container {
         max-width: 1440px;
-        padding-left: 156px;
-    display: flex;
-    align-items: baseline;
+        padding-right: 156px;
+        padding-left: 159px;
+        display: flex;
+        align-items: baseline;
     
 }
 }
@@ -980,7 +980,7 @@ align-items: normal;
 
 }
 
-.footer-form-btn {
+/*.footer-form-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -999,8 +999,7 @@ align-items: normal;
 
 @media only screen and (min-width: 1158px) {
    .footer-form-btn {
-    display: flex;
-    display: inline-block;
+    display: flex; 
     min-width: 165px;
     height: 40px;
     font-weight: 500;
@@ -1013,28 +1012,19 @@ align-items: normal;
     cursor: pointer;
       transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-}
-.footer-form-btn:hover,
-.footer-form-btn:focus {
-    background-color: #4d5ae5;
-}
-.btn-icon {
-    margin-left: 16px;
-    fill: #fff;
-}
+}*/
+
 
 .footer-end {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 @media only screen and (min-width: 768px)  {
     .footer-end {
         display: flex;
-     
-
+        align-items: flex-start;
     }
 }
 @media only screen and (min-width: 1158px) {
@@ -1057,26 +1047,14 @@ align-items: normal;
 }
 @media only screen and (min-width: 768px) {
 .footer-end-text {
-    text-align: left;
-    display: inline-block;
-    font-weight: 500;
-    display: block;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; 
-    color: #fff;
-    margin-bottom: 16px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+text-align: left;
 }
 }
-
 @media only screen and (min-width: 768px) {
 .footer-form {
-    display: flex;
+display: flex;
 flex-direction: row;
 margin-bottom: 48px;
-margin-left: 159px;
-
 }
 }
 .footer-form-input {
@@ -1111,18 +1089,15 @@ margin-left: 159px;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba( 0, 0, 0, 0.15);
   border: 1px solid #ffffff;
+}
+}
 
-}
-}
 .footer-form-btn {
-    margin-top: 16px;
-    display: flex;
     margin: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 165px;
     height: 40px;
-    font-weight: 500;
     line-height: 1.5;  
     letter-spacing: 0.04em;
     border: none;
@@ -1131,14 +1106,14 @@ margin-left: 159px;
     color: #ffffff;
     cursor: pointer;
     padding: 8px 24px;
-      transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width:768px) {
 .footer-form-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 165px;
+    margin-top: 4px;
     height: 40px;
     font-weight: 500;
     line-height: 1.5;  
@@ -1148,10 +1123,12 @@ margin-left: 159px;
     background-color: #4d5ae5;
     color: #ffffff;
     cursor: pointer;
-    padding: 8px 24px;
-      transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0px 16px;
+    gap: 8px;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
+
 .footer-form-btn:hover,
 .footer-form-btn:focus {
     background-color: #4d5ae5;
